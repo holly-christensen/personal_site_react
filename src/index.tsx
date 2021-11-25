@@ -12,6 +12,7 @@ import "./styles.css";
 import TextImageSection, {
   TextImageSectionProps,
 } from "./layouts/TextImageSection";
+import ImageGallery, { ImageGalleryProps } from "./layouts/ImageGallery";
 
 const postHeaderProps: PostHeaderProps = {
   post: {
@@ -48,6 +49,13 @@ const textImageSectionProps: TextImageSectionProps = {
     body: "Integer pellentesque condimentum nisl, quis pulvinar massa rhoncus sed. Sed quis nibh elementum, maximus tortor eget, convallis est. Sed in posuere nulla, ut sodales mauris. Quisque pulvinar dictum justo quis dignissim. Donec sit amet nulla accumsan, laoreet odio vitae, tristique erat. Pellentesque euismod sodales mollis.",
   },
 };
+const imageGalleryProps: ImageGalleryProps = {
+  post: {
+    imgPaths: [image1, image1, image1],
+    imgAlts: ["alt text!", "sadfsf", "asdfas"],
+    captions: ["this is a caption!!", "asefasdfsadf", "asfasdfasdfadsf"],
+  },
+};
 
 ReactDOM.render(
   <React.Fragment>
@@ -57,6 +65,7 @@ ReactDOM.render(
     <PostHeader post={postHeaderProps.post} />
     <TextSection post={textSectionProps.post} />
     <TextImageSection post={textImageSectionProps.post} />
+    <ImageGallery post={imageGalleryProps.post} />
   </React.Fragment>,
   document.getElementById("root")
 );
