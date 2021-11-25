@@ -1,0 +1,16 @@
+.text-section_body {
+    list-style-type: none;
+}
+
+.paper {
+    position: relative;
+    color: #1a202c;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0% 8%;
+}
+
+.caption {
+    font-style: italic;
+}

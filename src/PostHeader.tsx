@@ -23,19 +23,9 @@ export default function PostHeader(props: PostHeaderProps) {
   const { post } = props;
 
   return (
-    <Paper
-      sx={{
-        position: "relative",
-        backgroundColor: "#FFF",
-        color: "#1a202c",
-        // mb: 4,
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center",
-      }}
-    >
+    <Paper className="paper">
       <Grid container>
-        <Grid xs={11}>
+        <Grid item xs={11}>
           <Box
             sx={{
               position: "relative",

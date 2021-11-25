@@ -7,6 +7,11 @@ import * as serviceWorker from "./serviceWorker";
 import Album from "./Album";
 import PostHeader, { PostHeaderProps } from "./PostHeader";
 import image1 from "./img/headers/type-header.png";
+import TextSection, { TextSectionProps } from "./layouts/TextSection";
+import "./styles.css";
+import TextImageSection, {
+  TextImageSectionProps,
+} from "./layouts/TextImageSection";
 
 const postHeaderProps: PostHeaderProps = {
   post: {
@@ -23,6 +28,26 @@ const postHeaderProps: PostHeaderProps = {
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ante enim, pulvinar et massa et, pulvinar finibus erat. Maecenas porttitor pellentesque ante non tempus. Aenean nulla odio, efficitur a nisl ut, viverra posuere lectus. Quisque pulvinar dictum justo quis dignissim. Donec sit amet nulla accumsan, laoreet odio vitae, tristique erat. Pellentesque euismod sodales mollis. Sed rutrum congue pretium. Vestibulum pharetra convallis nisl. Duis a urna luctus, tempus sapien non, bibendum erat. Suspendisse massa velit, molestie non consectetur id, rutrum et metus. Integer pellentesque condimentum nisl, quis pulvinar massa rhoncus sed. Sed in posuere nulla, ut sodales mauris. In auctor nulla in velit iaculis, ac gravida nisl rhoncus. Donec nec porttitor nisl. Sed quis nibh elementum, maximus tortor eget, convallis est. Sed in posuere nulla, ut sodales mauris. In auctor nulla in velit iaculis, ac gravida nisl rhoncus. Donec nec porttitor nisl. Sed quis nibh elementum, maximus tortor eget, convallis.",
   },
 };
+const textSectionProps: TextSectionProps = {
+  post: {
+    header: "Section title",
+    subheaders: ["header1", "header2", "header3"],
+    bodies: [
+      "Integer pellentesque condimentum nisl, quis pulvinar massa rhoncus sed.",
+      "Sed quis nibh elementum, maximus tortor eget, convallis est. Sed in posuere nulla, ut sodales mauris.",
+      "Quisque pulvinar dictum justo quis dignissim. Donec sit amet nulla accumsan, laoreet odio vitae, tristique erat. Pellentesque euismod sodales mollis.",
+    ],
+  },
+};
+const textImageSectionProps: TextImageSectionProps = {
+  post: {
+    imgPath: image1,
+    imgAlt: "alt text!",
+    caption: "this is a caption!!",
+    header: "Section title",
+    body: "Integer pellentesque condimentum nisl, quis pulvinar massa rhoncus sed. Sed quis nibh elementum, maximus tortor eget, convallis est. Sed in posuere nulla, ut sodales mauris. Quisque pulvinar dictum justo quis dignissim. Donec sit amet nulla accumsan, laoreet odio vitae, tristique erat. Pellentesque euismod sodales mollis.",
+  },
+};
 
 ReactDOM.render(
   <React.Fragment>
@@ -30,6 +55,8 @@ ReactDOM.render(
     <CssBaseline />
     {/* <Album /> */}
     <PostHeader post={postHeaderProps.post} />
+    <TextSection post={textSectionProps.post} />
+    <TextImageSection post={textImageSectionProps.post} />
   </React.Fragment>,
   document.getElementById("root")
 );
