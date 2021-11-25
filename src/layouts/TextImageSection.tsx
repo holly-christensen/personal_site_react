@@ -20,7 +20,7 @@ export default function TextImageSection(props: TextImageSectionProps) {
     <Paper className="paper">
       <Grid container>
         {/* TEXT */}
-        <Grid item xs={11} md={6}>
+        <Grid item xs={11} md={4}>
           <Box
             sx={{
               position: "relative",
@@ -38,13 +38,13 @@ export default function TextImageSection(props: TextImageSectionProps) {
         </Grid>
 
         {/* IMAGE & CAPTION*/}
-        <Grid item xs={11} md={5}>
+        <Grid item xs={11} md={7}>
           <Box
             sx={{
               position: "relative",
               p: { xs: 3 },
               pr: { md: 0 },
-              mt: { xs: 0, md: 9 },
+              mt: { xs: 0, md: 4 },
             }}
           >
             <img src={post.imgPath} alt={post.imgAlt} width="100%" />

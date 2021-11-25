@@ -5,6 +5,7 @@
 .paper {
     position: relative;
     color: #1a202c;
+    background: #FAFAFA !important;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -13,4 +14,14 @@
 
 .caption {
     font-style: italic;
+}
+
+.h4 {
+    color: red !important;
+}
+
+.image-full {
+    width: 65vh;
+    /* text-align: center; */
+    /* margin: 0px auto; */
 }

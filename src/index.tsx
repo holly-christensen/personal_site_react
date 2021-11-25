@@ -13,6 +13,8 @@ import TextImageSection, {
   TextImageSectionProps,
 } from "./layouts/TextImageSection";
 import ImageGallery, { ImageGalleryProps } from "./layouts/ImageGallery";
+import ImageFull, { ImageFullProps } from "./layouts/ImageFull";
+import TypographyPage from "./pages/type";
 
 const postHeaderProps: PostHeaderProps = {
   post: {
@@ -57,15 +59,24 @@ const imageGalleryProps: ImageGalleryProps = {
   },
 };
 
+const imageFullProps: ImageFullProps = {
+  post: {
+    imgPath: image1,
+    imgAlt: "asdfasdfasdfsdfsdf",
+    caption: "asdfsdfasfsdfasdfsdfsdfdsfdsfsdfsdf sdfsd",
+  },
+};
+
 ReactDOM.render(
   <React.Fragment>
-    {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
     <CssBaseline />
+    <TypographyPage />
     {/* <Album /> */}
-    <PostHeader post={postHeaderProps.post} />
-    <TextSection post={textSectionProps.post} />
-    <TextImageSection post={textImageSectionProps.post} />
-    <ImageGallery post={imageGalleryProps.post} />
+    {/* <PostHeader post={postHeaderProps.post} /> */}
+    {/* <TextSection post={textSectionProps.post} /> */}
+    {/* <TextImageSection post={textImageSectionProps.post} /> */}
+    {/* <ImageGallery post={imageGalleryProps.post} /> */}
+    {/* <ImageFull post={imageFullProps.post} /> */}
   </React.Fragment>,
   document.getElementById("root")
 );

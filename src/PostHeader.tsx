@@ -81,10 +81,10 @@ export default function PostHeader(props: PostHeaderProps) {
               Tools
             </Typography>
             <Typography color="inherit" paragraph>
-              {post.role}
+              {post.tools}
             </Typography>
             <Typography variant="h5" color="inherit">
-              Links
+              {post.linkText == "" ? "" : Link}
             </Typography>
             <Link variant="subtitle1" href={post.linkUrl}>
               {post.linkText}
