@@ -5,12 +5,31 @@ import App from "./App";
 import MyCard, { MyCardProps } from "./MyCard";
 import * as serviceWorker from "./serviceWorker";
 import Album from "./Album";
+import PostHeader, { PostHeaderProps } from "./PostHeader";
+import image1 from "./img/headers/type-header.png";
+
+const postHeaderProps: PostHeaderProps = {
+  post: {
+    title: "Title",
+    imgPath: image1,
+    imgAlt: "alt text!",
+    role: "role!",
+    what: "what",
+    when: "when",
+    tools: "toolz",
+    linkText: "a link!",
+    linkUrl: "#",
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ante enim, pulvinar et massa et, pulvinar finibus erat. Maecenas porttitor pellentesque ante non tempus. Aenean nulla odio, efficitur a nisl ut, viverra posuere lectus. Quisque pulvinar dictum justo quis dignissim. Donec sit amet nulla accumsan, laoreet odio vitae, tristique erat. Pellentesque euismod sodales mollis. Sed rutrum congue pretium. Vestibulum pharetra convallis nisl. Duis a urna luctus, tempus sapien non, bibendum erat. Suspendisse massa velit, molestie non consectetur id, rutrum et metus. Integer pellentesque condimentum nisl, quis pulvinar massa rhoncus sed. Sed in posuere nulla, ut sodales mauris. In auctor nulla in velit iaculis, ac gravida nisl rhoncus. Donec nec porttitor nisl. Sed quis nibh elementum, maximus tortor eget, convallis est. Sed in posuere nulla, ut sodales mauris. In auctor nulla in velit iaculis, ac gravida nisl rhoncus. Donec nec porttitor nisl. Sed quis nibh elementum, maximus tortor eget, convallis.",
+  },
+};
 
 ReactDOM.render(
   <React.Fragment>
     {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
     <CssBaseline />
-    <Album />
+    {/* <Album /> */}
+    <PostHeader post={postHeaderProps.post} />
   </React.Fragment>,
   document.getElementById("root")
 );

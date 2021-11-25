@@ -114,7 +114,7 @@ export default function Album() {
                 <MyCard
                   imgAlt={cardProps.imgAlt}
                   imgPath={cardProps.imgPath}
-                  title={cardProps.title}
+                  title={card.toString()}
                   //   sx={{
                   //     height: "100%",
                   //     display: "flex",
