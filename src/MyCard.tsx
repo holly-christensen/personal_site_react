@@ -13,7 +13,9 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
-import Link from "@mui/material/Link";
+// import Link from "@mui/material/Link";
+import { Link } from "react-router-dom";
+
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 const theme = createTheme();
@@ -30,7 +32,7 @@ export default function MyCard(props: MyCardProps) {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Link href={props.linkPath}>
+      <Link to={props.linkPath}>
         <Card className={"card"}>
           <CardMedia
             component="img"

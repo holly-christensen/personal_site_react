@@ -9,7 +9,6 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import MyCard, { MyCardProps } from "./MyCard";
-import { Backdrop, Paper } from "@mui/material";
 import { Link } from "react-router-dom";
 
 // function Copyright() {
@@ -131,16 +130,13 @@ export default function Main(props: MainProps) {
       </main>
       {/* Footer */}
       <Box sx={{ bgcolor: "background.paper", p: 6 }} component="footer">
-        <Typography variant="h6" align="center" gutterBottom>
-          Footer
-        </Typography>
         <Typography
           variant="subtitle1"
           align="center"
           color="text.secondary"
           component="p"
         >
-          Something here to give the footer a purpose!
+          Personally designed and developed
         </Typography>
         {/* <Copyright /> */}
       </Box>

@@ -1,24 +1,14 @@
 import * as React from "react";
-import ReactDOM from "react-dom";
-import CssBaseline from "@mui/material/CssBaseline";
-import App from "./App";
-import MyCard, { MyCardProps } from "./MyCard";
 import * as serviceWorker from "./serviceWorker";
-import Main, { MainProps } from "./Main";
+import CssBaseline from "@mui/material/CssBaseline";
+import ReactDOM from "react-dom";
+import Main from "./Main";
 import { mainProps } from "./page-content/main-content";
-import PostHeader, { PostHeaderProps } from "./PostHeader";
-import image1 from "./img/headers/type-header.png";
-import TextSection, { TextSectionProps } from "./layouts/TextSection";
 import "./styles.css";
-import TextImageSection, {
-  TextImageSectionProps,
-} from "./layouts/TextImageSection";
-import ImageGallery, { ImageGalleryProps } from "./layouts/ImageGallery";
-import ImageFull, { ImageFullProps } from "./layouts/ImageFull";
-import TypographyPage from "./pages/type";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
-import { red } from "@mui/material/colors";
 import { HashRouter as Router, Route, Link, Routes } from "react-router-dom";
+import GraphicDesignPage from "./pages/graphic-design-page";
+import TypographyPage from "./pages/type-page";
 
 const theme = createTheme({
   typography: {
@@ -53,20 +43,18 @@ const theme = createTheme({
 ReactDOM.render(
   <React.Fragment>
     <Router>
-      {/* <CssBaseline /> */}
-      <ThemeProvider theme={theme}>
-        {/* <TypographyPage /> */}
-        {/* <Main {...mainProps} /> */}
-        {/* <PostHeader post={postHeaderProps.post} /> */}
-        {/* <TextSection post={textSectionProps.post} /> */}
-        {/* <TextImageSection post={textImageSectionProps.post} /> */}
-        {/* <ImageGallery post={imageGalleryProps.post} /> */}
-        {/* <ImageFull post={imageFullProps.post} /> */}
-      </ThemeProvider>
+      <CssBaseline />
+      <ThemeProvider theme={theme}></ThemeProvider>
       <Routes>
         <Route path="/" element={<Main {...mainProps} />} />
         {/* <Route path="/about" element={<AboutPage />} /> */}
         {/* <Route path="/resume" element={<ResumePage />} /> */}
+        <Route path="/typography" element={<TypographyPage />} />
+        <Route path="/graphicdesign" element={<GraphicDesignPage />} />
+        {/* <Route path="/scout" element={<ScoutPage />} /> */}
+        {/* <Route path="/emulatecoop" element={<EmulatePage />} /> */}
+        {/* <Route path="/morsecoop" element={<MorsePage />} /> */}
+        {/* <Route path="/freelancework" element={<FreelancePage />} /> */}
       </Routes>
     </Router>
   </React.Fragment>,
