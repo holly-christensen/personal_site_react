@@ -9,14 +9,14 @@ export default function NavBar() {
     <React.Fragment>
       <CssBaseline />
       <AppBar position="relative">
-        <Toolbar>
-          <Link to={"/"} className="nav_link">
+        <Toolbar className={"nav-bar"}>
+          <Link to={"/"} className={"nav-bar_item"}>
             Portfolio
           </Link>
-          <Link to={"/about"} className="nav_link">
+          <Link to={"/about"} className={"nav-bar_item"}>
             About
           </Link>
-          <Link to={"/resume"} className="nav_link">
+          <Link to={"/resume"} className={"nav-bar_item"}>
             Resume
           </Link>
         </Toolbar>

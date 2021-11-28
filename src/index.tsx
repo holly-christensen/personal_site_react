@@ -10,6 +10,7 @@ import GraphicDesignPage from "./pages/graphic-design-page";
 import TypographyPage from "./pages/type-page";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
+import AboutPage from "./pages/about-page";
 
 const theme = createTheme({
   typography: {
@@ -32,7 +33,7 @@ const theme = createTheme({
     fontFamily: ["Open Sans", '"Helvetica Neue"', "Arial", "sans-serif"].join(
       ","
     ),
-    fontSize: 11,
+    fontSize: 13,
   },
   palette: {
     background: {
@@ -50,7 +51,7 @@ ReactDOM.render(
       {/* LINKS */}
       <Routes>
         <Route path="/" element={<Main {...mainProps} />} />
-        {/* <Route path="/about" element={<AboutPage />} /> */}
+        <Route path="/about" element={<AboutPage />} />
         {/* <Route path="/resume" element={<ResumePage />} /> */}
         <Route path="/typography" element={<TypographyPage />} />
         <Route path="/graphicdesign" element={<GraphicDesignPage />} />

@@ -2,6 +2,11 @@
 need css documentation here
 */
 
+:root {
+    --main-dark: #1a202c;
+    --main-light: #FAFAFA;
+}
+
 .text-section_body {
     list-style-type: none;
 }
@@ -16,27 +21,21 @@ need css documentation here
 }
 
 .paper_default {
-    color: #1a202c;
-    background: #FAFAFA !important;
+    color: var(--main-dark);
+    background: var(--main-light) !important;
 }
 
 .paper_main {
-    color: #FAFAFA;
-    background: #1a202c !important;
+    color: var(--main-light);
+    background: var(--main-dark) !important;
 }
 
 .caption {
     font-style: italic;
 }
 
-.h4 {
-    color: red !important;
-}
-
 .image-full {
     width: 70vh;
-    /* text-align: center; */
-    /* margin: 0px auto; */
 }
 
 .card {
@@ -52,7 +51,7 @@ need css documentation here
 }
 
 .card_title {
-    color: white;
+    color: var(--main-light);
     position: absolute;
     top: 6px;
     left: 12px;
@@ -62,3 +61,18 @@ need css documentation here
 /* .main_name {
     font-family: Monotalic, Karla, Arial, Helvetica, sans-serif;
 } */
+
+.nav-bar_item {
+    color: var(--main-light);
+    padding: 0px 20px;
+    text-decoration: none;
+}
+
+.nav-bar {
+    background: var(--main-dark);
+    box-shadow: none !important;
+}
+
+.main {
+    background: var(--main-dark);
+}
