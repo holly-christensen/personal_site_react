@@ -19,41 +19,30 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 const theme = createTheme();
 
 export interface MyCardProps {
+  title: string;
   imgPath: string;
   imgAlt: string;
-  title: string;
+  linkPath: string;
+  linkAlt: string;
 }
 
 export default function MyCard(props: MyCardProps) {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-
-      <Card
-        sx={{
-          height: "100%",
-          display: "flex",
-          flexDirection: "column",
-        }}
-      >
-        <CardMedia
-          component="img"
-          //   sx={{
-          //     // 16:9
-          //     // pt: "56.25%",
-          //     pt: "0%",
-          //   }}
-          image={props.imgPath}
-          //   image="https://source.unsplash.com/random"
-          alt={props.imgAlt}
-        />
-
-        <CardContent sx={{ flexGrow: 1 }}>
-          <Typography gutterBottom variant="h6" className={"card_title"}>
+      <Link href={props.linkPath}>
+        <Card className={"card"}>
+          <CardMedia
+            component="img"
+            image={props.imgPath}
+            alt={props.imgAlt}
+            className={"card_media"}
+          />
+          <Typography variant="h6" className={"card_title"}>
             {props.title}
           </Typography>
-        </CardContent>
-      </Card>
+        </Card>
+      </Link>
     </ThemeProvider>
   );
 }

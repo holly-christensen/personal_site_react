@@ -1,11 +1,5 @@
-import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Button from "@mui/material/Button";
-import CameraIcon from "@mui/icons-material/PhotoCamera";
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
 import CssBaseline from "@mui/material/CssBaseline";
 import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
@@ -13,50 +7,58 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
-import Link from "@mui/material/Link";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import MyCard, { MyCardProps } from "./MyCard";
+import { Backdrop, Paper } from "@mui/material";
+import { Link } from "react-router-dom";
 
-function Copyright() {
-  return (
-    <Typography variant="body2" color="text.secondary" align="center">
-      {"Copyright © "}
-      <Link color="inherit" href="https://mui.com/">
-        Your Website
-      </Link>{" "}
-      {new Date().getFullYear()}
-      {"."}
-    </Typography>
-  );
+// function Copyright() {
+//   return (
+//     <Typography variant="body2" color="text.secondary" align="center">
+//       {"Copyright © "}
+//       <Link color="inherit" href="https://mui.com/">
+//         Holly Lovejoy
+//       </Link>{" "}
+//       {new Date().getFullYear()}
+//       {"."}
+//     </Typography>
+//   );
+// }
+
+export interface MainProps {
+  mainProps: {
+    title: string;
+    description: string;
+    buttons: {
+      text: string;
+      path: string;
+      faClasses: string;
+    }[];
+    cards: MyCardProps[];
+  };
 }
-
-const cardProps: MyCardProps = {
-  imgPath: "https://source.unsplash.com/random",
-  imgAlt: "a picture of something",
-  title: "Title",
-};
-
-const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 const theme = createTheme();
 
-export default function Album() {
+export default function Main(props: MainProps) {
+  const { mainProps } = props;
+  const { title, description, buttons, cards } = mainProps;
+
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-
       {/* NAV BAR */}
       <AppBar position="relative">
         <Toolbar>
-          <Typography variant="h6" color="inherit" className="nav_link" noWrap>
+          <Link to={"/"} className="nav_link">
             Portfolio
-          </Typography>
-          <Typography variant="h6" color="inherit" className="nav_link" noWrap>
-            About
-          </Typography>
-          <Typography variant="h6" color="inherit" className="nav_link" noWrap>
+          </Link>
+          <Link to={"/typography"} className="nav_link">
+            Typography
+          </Link>
+          <Link to={"/"} className="nav_link">
             Resume
-          </Typography>
+          </Link>
         </Toolbar>
       </AppBar>
 
@@ -77,8 +79,9 @@ export default function Album() {
               align="center"
               color="text.primary"
               gutterBottom
+              className="main_name"
             >
-              Album layout
+              {title}
             </Typography>
 
             {/* DESCRIPTION TEXT */}
@@ -88,9 +91,7 @@ export default function Album() {
               color="text.secondary"
               paragraph
             >
-              Something short and leading about the collection below—its
-              contents, the creator, etc. Make it short and sweet, but not too
-              short so folks don&apos;t simply skip over it entirely.
+              {description}
             </Typography>
 
             {/* CTA BUTTONS */}
@@ -100,8 +101,13 @@ export default function Album() {
               spacing={2}
               justifyContent="center"
             >
-              <Button variant="contained">Main call to action</Button>
-              <Button variant="outlined">Secondary action</Button>
+              {buttons.map((button) => {
+                return (
+                  <Button variant="contained" href={button.path}>
+                    {button.text}
+                  </Button>
+                );
+              })}
             </Stack>
           </Container>
         </Box>
@@ -109,17 +115,14 @@ export default function Album() {
         {/* GRID */}
         <Container sx={{ py: 8 }} maxWidth="md">
           <Grid container spacing={4}>
-            {cards.map((card) => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
+            {cards.map((card, index) => (
+              <Grid item key={index} xs={12} sm={6} md={4}>
                 <MyCard
-                  imgAlt={cardProps.imgAlt}
-                  imgPath={cardProps.imgPath}
-                  title={card.toString()}
-                  //   sx={{
-                  //     height: "100%",
-                  //     display: "flex",
-                  //     flexDirection: "column",
-                  //   }}
+                  title={card.title}
+                  imgAlt={card.imgAlt}
+                  imgPath={card.imgPath}
+                  linkPath={card.linkPath}
+                  linkAlt={card.linkAlt}
                 ></MyCard>
               </Grid>
             ))}
@@ -139,7 +142,7 @@ export default function Album() {
         >
           Something here to give the footer a purpose!
         </Typography>
-        <Copyright />
+        {/* <Copyright /> */}
       </Box>
       {/* End footer */}
     </ThemeProvider>

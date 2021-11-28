@@ -1,15 +1,28 @@
+/* 
+need css documentation here
+*/
+
 .text-section_body {
     list-style-type: none;
 }
 
-.paper {
+.paper_default,
+.paper_main {
     position: relative;
-    color: #1a202c;
-    background: #FAFAFA !important;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     padding: 0% 8%;
+}
+
+.paper_default {
+    color: #1a202c;
+    background: #FAFAFA !important;
+}
+
+.paper_main {
+    color: #FAFAFA;
+    background: #1a202c !important;
 }
 
 .caption {
@@ -25,3 +38,27 @@
     /* text-align: center; */
     /* margin: 0px auto; */
 }
+
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.card_media {
+    position: relative;
+    float: left;
+}
+
+.card_title {
+    color: white;
+    position: absolute;
+    top: 6px;
+    left: 12px;
+}
+
+
+/* .main_name {
+    font-family: Monotalic, Karla, Arial, Helvetica, sans-serif;
+} */

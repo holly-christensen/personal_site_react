@@ -20,7 +20,7 @@ export default function ImageGallery(props: ImageGalleryProps) {
         {/* IMAGES & CAPTIONS*/}
         {post.imgPaths.map((imgPath, index) => {
           return (
-            <Grid item md={3.666} xs={5.5}>
+            <Grid item md={3.666} xs={5.5} key={index}>
               <Box
                 sx={{
                   position: "relative",
