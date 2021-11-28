@@ -1,4 +1,3 @@
-import * as React from "react";
 import * as serviceWorker from "./serviceWorker";
 import CssBaseline from "@mui/material/CssBaseline";
 import ReactDOM from "react-dom";
@@ -6,9 +5,11 @@ import Main from "./Main";
 import { mainProps } from "./page-content/main-content";
 import "./styles.css";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
-import { HashRouter as Router, Route, Link, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import GraphicDesignPage from "./pages/graphic-design-page";
 import TypographyPage from "./pages/type-page";
+import NavBar from "./NavBar";
+import Footer from "./Footer";
 
 const theme = createTheme({
   typography: {
@@ -41,10 +42,12 @@ const theme = createTheme({
 });
 
 ReactDOM.render(
-  <React.Fragment>
+  <ThemeProvider theme={theme}>
+    <CssBaseline />
     <Router>
-      <CssBaseline />
-      <ThemeProvider theme={theme}></ThemeProvider>
+      {/* NAV BAR */}
+      <NavBar />
+      {/* LINKS */}
       <Routes>
         <Route path="/" element={<Main {...mainProps} />} />
         {/* <Route path="/about" element={<AboutPage />} /> */}
@@ -56,8 +59,10 @@ ReactDOM.render(
         {/* <Route path="/morsecoop" element={<MorsePage />} /> */}
         {/* <Route path="/freelancework" element={<FreelancePage />} /> */}
       </Routes>
+      {/* FOOTER */}
+      <Footer />
     </Router>
-  </React.Fragment>,
+  </ThemeProvider>,
   document.getElementById("root")
 );
 

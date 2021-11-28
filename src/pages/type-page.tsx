@@ -23,7 +23,7 @@ export default function TypographyPage() {
       <ImageGallery post={systemGallery.post} />
       {/* mahler */}
       <TextImageSection post={mahlerTextImageSection.post} />
-      {/* ruby */}
+      {/* sterling ruby */}
       <TextImageSection post={rubyTextImageSection.post} />
       <ImageGallery post={rubyWorkGallery.post} />
       <ImageGallery post={rubyProgressGallery.post} />
