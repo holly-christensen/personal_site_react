@@ -11,23 +11,24 @@ need css documentation here
     list-style-type: none;
 }
 
-.paper_default,
+
+/* .paper_default,
 .paper_main {
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     padding: 0% 8%;
-}
+} */
 
-.paper_default {
-    color: var(--main-dark);
-    background: var(--main-light) !important;
-}
-
-.paper_main {
+.background_dark {
     color: var(--main-light);
     background: var(--main-dark) !important;
+}
+
+.background_light {
+    color: var(--main-dark);
+    background: var(--main-light) !important;
 }
 
 .caption {
@@ -51,28 +52,44 @@ need css documentation here
 }
 
 .card_title {
-    color: var(--main-light);
+    color: var(--main-dark);
     position: absolute;
     top: 6px;
     left: 12px;
 }
 
-
-/* .main_name {
-    font-family: Monotalic, Karla, Arial, Helvetica, sans-serif;
-} */
-
 .nav-bar_item {
-    color: var(--main-light);
+    color: inherit;
     padding: 0px 20px;
     text-decoration: none;
 }
 
 .nav-bar {
-    background: var(--main-dark);
-    box-shadow: none !important;
+    /* background: var(--main-dark); */
+    /* box-shadow: none !important; */
+    background: inherit;
 }
 
 .main {
-    background: var(--main-dark);
+    background: inherit;
+}
+
+.footer_box {
+    padding: 7vh;
+}
+
+.footer_text {
+    text-align: center;
+    color: inherit
+}
+
+.hero_box {
+    color: inherit;
+    padding-top: 8%;
+    padding-bottom: 6%;
+    text-align: left;
+}
+
+.text-image-section_container {
+    color: inherit;
 }

@@ -35,11 +35,6 @@ const theme = createTheme({
     ),
     fontSize: 13,
   },
-  palette: {
-    background: {
-      default: "#000000",
-    },
-  },
 });
 
 ReactDOM.render(

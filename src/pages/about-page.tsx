@@ -4,7 +4,7 @@ import TextImageSection from "../layouts/TextImageSection";
 
 export default function AboutPage() {
   return (
-    <div>
+    <div className={"background_dark"}>
       <TextImageSection post={aboutTextImageSection.post} />
     </div>
   );

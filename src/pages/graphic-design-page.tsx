@@ -17,7 +17,7 @@ import ImageFull from "../layouts/ImageFull";
 
 export default function GraphicDesignPage() {
   return (
-    <div>
+    <div className={"background_light"}>
       {/* page header */}
       <PostHeader post={gdHeaderProps.post} />
       {/* memorial system */}

@@ -23,7 +23,7 @@ export default function PostHeader(props: PostHeaderProps) {
   const { post } = props;
 
   return (
-    <Paper className="paper">
+    <div>
       <Grid container>
         <Grid item xs={11}>
           <Box
@@ -109,6 +109,6 @@ export default function PostHeader(props: PostHeaderProps) {
           </Box>
         </Grid>
       </Grid>
-    </Paper>
+    </div>
   );
 }

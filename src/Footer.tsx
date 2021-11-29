@@ -7,13 +7,8 @@ export default function Footer() {
   return (
     <React.Fragment>
       <CssBaseline />
-      <Box sx={{ bgcolor: "background.paper", p: 6 }} component="footer">
-        <Typography
-          variant="subtitle2"
-          align="center"
-          color="text.secondary"
-          component="p"
-        >
+      <Box className={"footer_box background_dark"}>
+        <Typography className={"footer_text"} variant="subtitle2">
           Personally designed and developed
         </Typography>
       </Box>

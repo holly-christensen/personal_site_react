@@ -30,32 +30,22 @@ export default function Main(props: MainProps) {
   return (
     <React.Fragment>
       <CssBaseline />
-      <main>
+      <main className={"background_dark"}>
         {/* HERO UNIT*/}
-        <Box
-          sx={{
-            bgcolor: "background.paper",
-            pt: 8,
-            pb: 6,
-          }}
-        >
+        <Box className={"hero_box"}>
           <Container maxWidth="lg">
             {/* CENTER PAGE TITLE */}
             <Typography
+              className="hero_title"
               component="h1"
               variant="h3"
-              color="inherit"
-              align="left"
               gutterBottom
-              className="main_name"
             >
               {title}
             </Typography>
 
             {/* DESCRIPTION TEXT */}
-            <Typography align="left" paragraph>
-              {description}
-            </Typography>
+            <Typography paragraph>{description}</Typography>
 
             {/* CTA BUTTONS */}
             <Stack

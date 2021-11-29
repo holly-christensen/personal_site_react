@@ -8,7 +8,7 @@ export default function NavBar() {
   return (
     <React.Fragment>
       <CssBaseline />
-      <AppBar position="relative">
+      <AppBar position="relative" className={"background_dark"}>
         <Toolbar className={"nav-bar"}>
           <Link to={"/"} className={"nav-bar_item"}>
             Portfolio

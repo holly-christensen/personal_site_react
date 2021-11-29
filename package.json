@@ -36,6 +36,7 @@
     "@craco/craco": "latest",
     "@material-ui/styles": "^4.11.4",
     "@mui/icons-material": "^5.2.0",
-    "@types/react-dom": "^17.0.11"
+    "@types/react-dom": "^17.0.11",
+    "react-router-dom": "^6.0.2"
   }
 }

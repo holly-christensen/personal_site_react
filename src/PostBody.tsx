@@ -12,21 +12,18 @@ export default function PostBody(props: PostBodyProps) {
   const { post } = props;
 
   return (
-    <Paper className="paper">
-      {/* BELOW IMAGE */}
-      <Grid container>
-        <Grid item xs={9}>
-          <Box
-            sx={{
-              position: "relative",
-              p: { xs: 3, md: 6 },
-              pr: { md: 0 },
-            }}
-            // CONTENT HERE
-          ></Box>
-        </Grid>
+    <Grid container>
+      <Grid item xs={9}>
+        <Box
+          sx={{
+            position: "relative",
+            p: { xs: 3, md: 6 },
+            pr: { md: 0 },
+          }}
+          // CONTENT HERE
+        ></Box>
       </Grid>
-    </Paper>
+    </Grid>
   );
 }
 

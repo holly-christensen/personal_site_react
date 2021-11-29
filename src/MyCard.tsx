@@ -4,9 +4,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 import Typography from "@mui/material/Typography";
 import { Link } from "react-router-dom";
 
-import { createTheme, ThemeProvider } from "@mui/material/styles";
-
-const theme = createTheme();
+import React from "react";
 
 export interface MyCardProps {
   title: string;
@@ -18,7 +16,7 @@ export interface MyCardProps {
 
 export default function MyCard(props: MyCardProps) {
   return (
-    <ThemeProvider theme={theme}>
+    <React.Fragment>
       <CssBaseline />
       <Link to={props.linkPath}>
         <Card className={"card"}>
@@ -33,6 +31,6 @@ export default function MyCard(props: MyCardProps) {
           </Typography>
         </Card>
       </Link>
-    </ThemeProvider>
+    </React.Fragment>
   );
 }

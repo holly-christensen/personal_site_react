@@ -15,7 +15,7 @@ import TextImageSection from "../layouts/TextImageSection";
 
 export default function TypographyPage() {
   return (
-    <div>
+    <div className={"background_light"}>
       {/* page header */}
       <PostHeader post={typeHeaderProps.post} />
       {/* system */}
