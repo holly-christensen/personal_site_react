@@ -7,6 +7,9 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import MyCard, { MyCardProps } from "./MyCard";
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope, IconDefinition } from "@fortawesome/free-solid-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 export interface MainProps {
   mainProps: {
@@ -15,7 +18,7 @@ export interface MainProps {
     buttons: {
       text: string;
       path: string;
-      faClasses: string;
+      faIcon: IconDefinition;
     }[];
     cards: MyCardProps[];
   };
@@ -35,8 +38,8 @@ export default function Main(props: MainProps) {
             {/* CENTER PAGE TITLE */}
             <Typography
               className="hero_title"
-              component="h1"
-              variant="h3"
+              component="h2"
+              variant="h2"
               gutterBottom
             >
               {title}
@@ -52,29 +55,17 @@ export default function Main(props: MainProps) {
               spacing={2}
               justifyContent="left"
             >
-              <a href="https://github.com/holly-christensen/" target="_blank">
-                <i className={"fab fa-github-square fa-lg"}></i>
-              </a>
-              <a href="mailto:christensen.h@northeastern.edu" target="_blank">
-                <i className={"fas fa-envelope fa-lg"} aria-hidden="true"></i>
-              </a>
-              <a
-                href="https://www.linkedin.com/in/hachristensen/"
-                target="_blank"
-              >
-                <i className={"fab fa-linkedin fa-lg"} aria-hidden="true"></i>
-              </a>
-              {/* {buttons.map((button) => {
+              {buttons.map((button) => {
                 return (
-                  <Button
-                    variant="contained"
-                    href={button.path}
-                    className={"button"}
-                  >
-                    {button.text}
-                  </Button>
+                  <a href={button.path} target="_blank">
+                    <FontAwesomeIcon
+                      icon={button.faIcon}
+                      size="2x"
+                      className={"icon"}
+                    />
+                  </a>
                 );
-              })} */}
+              })}
             </Stack>
           </Container>
         </Box>

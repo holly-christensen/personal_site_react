@@ -95,7 +95,8 @@ need css documentation here
     color: inherit;
 }
 
-.button {
+
+/* .button {
     background: none !important;
     color: var(--main-light) !important;
     border: 1px solid var(--main-gray) !important;
@@ -104,7 +105,7 @@ need css documentation here
 
 .button:hover {
     border: 1px solid var(--main-light) !important;
-}
+} */
 
 
 /* Grow Shadow */
@@ -130,19 +131,20 @@ need css documentation here
 
 /* fontawesome icons */
 
-.fab,
-.fas {
+.icon {
     color: var(--main-gray-light);
     transition: color 1s;
+    margin-right: 10px;
 }
 
-.fab:hover,
-.fas:hover {
+.icon:hover {
     color: var(--main-light);
 }
 
-.fa-github-square,
-.fa-linkedin,
-.fa-envelope {
-    margin-right: 20px;
-}
+
+/*  typography  */
+
+
+/* .MuiTypography-h1 {
+    font-size: 3rem;
+} */

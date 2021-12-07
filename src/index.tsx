@@ -14,6 +14,16 @@ import AboutPage from "./pages/about-page";
 
 const theme = createTheme({
   typography: {
+    h2: {
+      fontSize: 50,
+      fontFamily: [
+        "Monotalic",
+        "Karla",
+        '"Helvetica Neue"',
+        "Arial",
+        "sans-serif",
+      ].join(","),
+    },
     h3: {
       fontSize: 40,
       fontFamily: [
@@ -36,6 +46,10 @@ const theme = createTheme({
     fontSize: 13,
   },
 });
+<script
+  src="https://kit.fontawesome.com/6d78120b8d.js"
+  crossOrigin="anonymous"
+></script>;
 
 ReactDOM.render(
   <ThemeProvider theme={theme}>
