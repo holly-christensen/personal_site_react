@@ -66,8 +66,8 @@ need css documentation here
 
 .nav-bar {
     /* background: var(--main-dark); */
-    /* box-shadow: none !important; */
-    background: inherit;
+    box-shadow: none !important;
+    /* background: none; */
 }
 
 .main {

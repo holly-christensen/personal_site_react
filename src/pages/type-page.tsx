@@ -18,15 +18,15 @@ export default function TypographyPage() {
     <div className={"background_light"}>
       {/* page header */}
       <PostHeader post={typeHeaderProps.post} />
+      {/* sterling ruby */}
+      <TextImageSection post={rubyTextImageSection.post} />
+      <ImageGallery post={rubyWorkGallery.post} />
+      <ImageGallery post={rubyProgressGallery.post} />
       {/* system */}
       <TextSection post={systemTextSection.post} />
       <ImageGallery post={systemGallery.post} />
       {/* mahler */}
       <TextImageSection post={mahlerTextImageSection.post} />
-      {/* sterling ruby */}
-      <TextImageSection post={rubyTextImageSection.post} />
-      <ImageGallery post={rubyWorkGallery.post} />
-      <ImageGallery post={rubyProgressGallery.post} />
     </div>
   );
 }

@@ -19,8 +19,9 @@ export const aboutTextImageSection: TextImageSectionProps = {
   post: {
     imgPath: profile,
     imgAlt: "Profile image",
+    imgSize: "small",
     caption: "",
     header: "Hi, I'm Holly",
-    body: "Recently, I worked on UI, UX, and interaction design as an intern at Emulate, Inc. I had the opportunity to work in a small team of product designers, software engineers, and mechanical engineers, to design user interfaces for web applications and a lab instrument. I currently do part-time freelance work. Much of my recent work has been with Timberrise, designing marketing and informational brochures, memos, and documents, as well as implementing Squarespace websites with custom HTML, CSS & JS. Previously, I've had the opportunity to work as a designer for Northeastern's student-led design studio Scout, conducting user experience research and designing a series of deliverables to improve the experience of ventures in Northeastern's venture accelerator. Check out my resume to see more.",
+    body: " Who I am... Integer maximus at nibh et cursus. Nullam maximus justo velit, eget elementum tortor elementum et. Sed id lobortis velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas congue magna eget ex suscipit, eget dapibus nisi cursus. Fusce risus orci, rhoncus quis ullamcorper quis, consectetur eget lectus. Phasellus varius tincidunt orci id hendrerit. Nunc vulputate dui vel ex cursus, pharetra rhoncus enim pellentesque.",
   },
 };

@@ -86,6 +86,7 @@ export const systemGallery: ImageGalleryProps = {
 export const mahlerTextImageSection: TextImageSectionProps = {
   post: {
     imgPath: mahler,
+    imgSize: "large",
     imgAlt: "Mahler Symphony Poster",
     caption: "Mahler Symphony Poster for Typography I",
     header: "Mahler Symphony Poster",
@@ -106,6 +107,7 @@ export const mahlerFullImage: ImageFullProps = {
 export const rubyTextImageSection: TextImageSectionProps = {
   post: {
     imgPath: ruby_final,
+    imgSize: "large",
     imgAlt: "Sterling Ruby Exhibition Poster",
     caption: "Sterling Ruby Exhibition Poster for Typography I",
     header: "Sterling Ruby Exhibition Poster",
