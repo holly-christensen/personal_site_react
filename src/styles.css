@@ -4,22 +4,14 @@ need css documentation here
 
 :root {
     --main-dark: #1a202c;
+    --main-gray: #657dae;
+    --main-gray-light: #a0aec0;
     --main-light: #FAFAFA;
 }
 
 .text-section_body {
     list-style-type: none;
 }
-
-
-/* .paper_default,
-.paper_main {
-    position: relative;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 0% 8%;
-} */
 
 .background_dark {
     color: var(--main-light);
@@ -31,6 +23,14 @@ need css documentation here
     background: var(--main-light) !important;
 }
 
+.text_dark {
+    color: var(--main-dark) !important;
+}
+
+.text_light {
+    color: var(--main-light) !important;
+}
+
 .caption {
     font-style: italic;
 }
@@ -40,10 +40,12 @@ need css documentation here
 }
 
 .card {
+    color: var(--main-dark);
     height: 100%;
     display: flex;
     flex-direction: column;
     position: relative;
+    border-radius: 0 !important;
 }
 
 .card_media {
@@ -53,9 +55,10 @@ need css documentation here
 
 .card_title {
     color: var(--main-dark);
+    font-size: medium !important;
     position: absolute;
-    top: 6px;
-    left: 12px;
+    top: 2%;
+    left: 4%;
 }
 
 .nav-bar_item {
@@ -65,9 +68,7 @@ need css documentation here
 }
 
 .nav-bar {
-    /* background: var(--main-dark); */
     box-shadow: none !important;
-    /* background: none; */
 }
 
 .main {
@@ -80,7 +81,7 @@ need css documentation here
 
 .footer_text {
     text-align: center;
-    color: inherit
+    color: var(--main-gray);
 }
 
 .hero_box {
@@ -92,4 +93,56 @@ need css documentation here
 
 .text-image-section_container {
     color: inherit;
+}
+
+.button {
+    background: none !important;
+    color: var(--main-light) !important;
+    border: 1px solid var(--main-gray) !important;
+    text-transform: none !important;
+}
+
+.button:hover {
+    border: 1px solid var(--main-light) !important;
+}
+
+
+/* Grow Shadow */
+
+.hvr-grow-shadow {
+    -webkit-transform: perspective(1px) translateZ(0) !important;
+    transform: perspective(1px) translateZ(0) !important;
+    /* box-shadow: 0 0 1px rgba(0, 0, 0, 0); */
+    -webkit-transition-duration: 0.3s !important;
+    transition-duration: 0.3s !important;
+    -webkit-transition-property: box-shadow, transform !important;
+    transition-property: box-shadow, transform !important;
+}
+
+.hvr-grow-shadow:hover,
+.hvr-grow-shadow:focus,
+.hvr-grow-shadow:active {
+    /* box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.1) !important; */
+    -webkit-transform: scale(1.009) !important;
+    transform: scale(1.009) !important;
+}
+
+
+/* fontawesome icons */
+
+.fab,
+.fas {
+    color: var(--main-gray-light);
+    transition: color 1s;
+}
+
+.fab:hover,
+.fas:hover {
+    color: var(--main-light);
+}
+
+.fa-github-square,
+.fa-linkedin,
+.fa-envelope {
+    margin-right: 20px;
 }

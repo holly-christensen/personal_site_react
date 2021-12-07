@@ -8,6 +8,7 @@ import React from "react";
 
 export interface MyCardProps {
   title: string;
+  titleColor: string;
   imgPath: string;
   imgAlt: string;
   linkPath: string;
@@ -15,18 +16,20 @@ export interface MyCardProps {
 }
 
 export default function MyCard(props: MyCardProps) {
+  const classNameToUse =
+    props.titleColor == "light" ? "text_light" : "text_dark";
   return (
     <React.Fragment>
       <CssBaseline />
       <Link to={props.linkPath}>
-        <Card className={"card"}>
+        <Card className={"card hvr-grow-shadow"}>
           <CardMedia
             component="img"
             image={props.imgPath}
             alt={props.imgAlt}
             className={"card_media"}
           />
-          <Typography variant="h6" className={"card_title"}>
+          <Typography className={`card_title ${classNameToUse}`}>
             {props.title}
           </Typography>
         </Card>

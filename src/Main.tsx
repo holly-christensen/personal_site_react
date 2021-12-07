@@ -6,8 +6,6 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import MyCard, { MyCardProps } from "./MyCard";
-import NavBar from "./NavBar";
-import Footer from "./Footer";
 import React from "react";
 
 export interface MainProps {
@@ -54,13 +52,29 @@ export default function Main(props: MainProps) {
               spacing={2}
               justifyContent="left"
             >
-              {buttons.map((button) => {
+              <a href="https://github.com/holly-christensen/" target="_blank">
+                <i className={"fab fa-github-square fa-lg"}></i>
+              </a>
+              <a href="mailto:christensen.h@northeastern.edu" target="_blank">
+                <i className={"fas fa-envelope fa-lg"} aria-hidden="true"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/hachristensen/"
+                target="_blank"
+              >
+                <i className={"fab fa-linkedin fa-lg"} aria-hidden="true"></i>
+              </a>
+              {/* {buttons.map((button) => {
                 return (
-                  <Button variant="contained" href={button.path}>
+                  <Button
+                    variant="contained"
+                    href={button.path}
+                    className={"button"}
+                  >
                     {button.text}
                   </Button>
                 );
-              })}
+              })} */}
             </Stack>
           </Container>
         </Box>
@@ -72,6 +86,7 @@ export default function Main(props: MainProps) {
               <Grid item key={index} xs={12} sm={6}>
                 <MyCard
                   title={card.title}
+                  titleColor={card.titleColor}
                   imgAlt={card.imgAlt}
                   imgPath={card.imgPath}
                   linkPath={card.linkPath}
