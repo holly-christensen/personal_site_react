@@ -67,9 +67,7 @@ need css documentation here
     text-decoration: none;
 }
 
-.nav-bar {
-    box-shadow: none !important;
-}
+.nav-bar {}
 
 .main {
     background: inherit;

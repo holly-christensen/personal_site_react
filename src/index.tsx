@@ -8,9 +8,10 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import GraphicDesignPage from "./pages/graphic-design-page";
 import TypographyPage from "./pages/type-page";
+import AboutPage from "./pages/about-page";
+import ScoutPage from "./pages/scout-page";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
-import AboutPage from "./pages/about-page";
 
 const theme = createTheme({
   typography: {
@@ -64,7 +65,7 @@ ReactDOM.render(
         {/* <Route path="/resume" element={<ResumePage />} /> */}
         <Route path="/typography" element={<TypographyPage />} />
         <Route path="/graphicdesign" element={<GraphicDesignPage />} />
-        {/* <Route path="/scout" element={<ScoutPage />} /> */}
+        <Route path="/scout" element={<ScoutPage />} />
         {/* <Route path="/emulatecoop" element={<EmulatePage />} /> */}
         {/* <Route path="/morsecoop" element={<MorsePage />} /> */}
         {/* <Route path="/freelancework" element={<FreelancePage />} /> */}

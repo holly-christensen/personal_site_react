@@ -3,6 +3,7 @@ import CardMedia from "@mui/material/CardMedia";
 import CssBaseline from "@mui/material/CssBaseline";
 import Typography from "@mui/material/Typography";
 import { Link } from "react-router-dom";
+import { COLORS } from "./consts";
 
 import React from "react";
 
@@ -17,7 +18,7 @@ export interface MyCardProps {
 
 export default function MyCard(props: MyCardProps) {
   const classNameToUse =
-    props.titleColor == "light" ? "text_light" : "text_dark";
+    props.titleColor == COLORS.LIGHT ? "text_light" : "text_dark";
   return (
     <React.Fragment>
       <CssBaseline />
