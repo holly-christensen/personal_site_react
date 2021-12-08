@@ -1,6 +1,5 @@
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 export const COLORS = {
     LIGHT: "COLOR_LIGHT",

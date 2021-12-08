@@ -1,6 +1,7 @@
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
+import { SIZES } from "../consts";
 
 export interface TextImageSectionProps {
   post: {
@@ -19,8 +20,8 @@ export default function TextImageSection(props: TextImageSectionProps) {
   const widthSmall = 4;
   const widthLarge = 7;
 
-  let textWidthToUse = post.imgSize == "small" ? widthLarge : widthSmall;
-  let imgWidthToUse = post.imgSize == "small" ? widthSmall : widthLarge;
+  let textWidthToUse = post.imgSize == SIZES.SMALL ? widthLarge : widthSmall;
+  let imgWidthToUse = post.imgSize == SIZES.SMALL ? widthSmall : widthLarge;
 
   return (
     <Grid container className={"text-image-section_container"}>

@@ -107,6 +107,7 @@ export const liloTextSection: TextSectionProps = {
 export const liloDarkFull: ImageFullProps = {
   post: {
     imgPath: liloDark,
+    fitToScreenHeight: true,
     imgAlt: "Lilo dark version",
     caption: "",
   },
@@ -114,6 +115,7 @@ export const liloDarkFull: ImageFullProps = {
 export const liloLightFull: ImageFullProps = {
   post: {
     imgPath: liloLight,
+    fitToScreenHeight: true,
     imgAlt: "Lilo light version",
     caption: "",
   },

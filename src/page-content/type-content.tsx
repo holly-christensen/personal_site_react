@@ -97,6 +97,7 @@ export const mahlerTextImageSection: TextImageSectionProps = {
 export const mahlerFullImage: ImageFullProps = {
   post: {
     imgPath: mahler,
+    fitToScreenHeight: true,
     imgAlt: "Mahler Symphony Poster",
     caption: "Mahler Symphony Poster for Typography I",
   },
@@ -118,6 +119,7 @@ export const rubyTextImageSection: TextImageSectionProps = {
 export const rubyFullImage: ImageFullProps = {
   post: {
     imgPath: ruby_final,
+    fitToScreenHeight: true,
     imgAlt: "Sterling Ruby Exhibition Poster",
     caption: "Sterling Ruby Exhibition Poster for Typography I",
   },

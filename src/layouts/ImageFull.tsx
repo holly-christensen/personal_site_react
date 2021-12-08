@@ -8,11 +8,14 @@ export interface ImageFullProps {
     imgPath: string;
     imgAlt: string;
     caption: string;
+    fitToScreenHeight: boolean;
   };
 }
 
 export default function ImageFull(props: ImageFullProps) {
   const { post } = props;
+
+  const classNamesToUse = post.fitToScreenHeight ? "image-full-fitted" : "";
 
   return (
     <Grid container>
@@ -27,7 +30,7 @@ export default function ImageFull(props: ImageFullProps) {
             pb: { md: 1 },
           }}
         >
-          <div className="image-full">
+          <div className={classNamesToUse}>
             <img
               src={post.imgPath}
               alt={post.imgAlt}

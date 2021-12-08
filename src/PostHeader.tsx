@@ -84,7 +84,7 @@ export default function PostHeader(props: PostHeaderProps) {
               {post.tools}
             </Typography>
             <Typography variant="h5" color="inherit">
-              {post.linkText == "" ? "" : Link}
+              {post.linkText == "" ? "" : "Link"}
             </Typography>
             <Link color="inherit" href={post.linkUrl}>
               {post.linkText}
