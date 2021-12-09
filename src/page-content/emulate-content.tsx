@@ -41,7 +41,7 @@ export const emulateHeaderProps: PostHeaderProps = {
     role: "UI & UX Designer",
     what: "Designer at Emulate, a biotech company in Cambridge",
     when: "Jan – June 2020",
-    tools: "Sketch, JIRA",
+    tools: "Sketch, Jira",
     linkText: "Emulate's Website",
     linkUrl: "https://emulatebio.com/",
     about:

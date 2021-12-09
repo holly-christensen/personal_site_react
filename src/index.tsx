@@ -11,6 +11,7 @@ import TypographyPage from "./pages/type-page";
 import AboutPage from "./pages/about-page";
 import ScoutPage from "./pages/scout-page";
 import EmulatePage from "./pages/emulate-page";
+import MorsePage from "./pages/morse-page";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
 
@@ -68,7 +69,7 @@ ReactDOM.render(
         <Route path="/graphicdesign" element={<GraphicDesignPage />} />
         <Route path="/scout" element={<ScoutPage />} />
         <Route path="/emulatecoop" element={<EmulatePage />} />
-        {/* <Route path="/morsecoop" element={<MorsePage />} /> */}
+        <Route path="/morsecoop" element={<MorsePage />} />
         {/* <Route path="/freelancework" element={<FreelancePage />} /> */}
       </Routes>
       {/* FOOTER */}
