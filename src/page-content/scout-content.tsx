@@ -34,8 +34,7 @@ export const scoutHeaderProps: PostHeaderProps = {
     tools: "Illustrator, Indesign, Trello",
     linkText: "",
     linkUrl: "#",
-    about:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris mi, tristique quis odio vel, molestie iaculis enim. Aliquam ultrices turpis a lectus dignissim, id viverra dolor dapibus. Vestibulum eu quam commodo, luctus nunc sit amet, malesuada est. Nunc finibus laoreet magna vitae convallis. Nam accumsan libero ac libero aliquet, quis rhoncus odio iaculis. Nunc interdum odio ut diam vulputate, at faucibus nulla posuere. Sed neque massa, venenatis sit amet dapibus a, mattis sit amet felis.",
+    about: "",
   },
 };
 

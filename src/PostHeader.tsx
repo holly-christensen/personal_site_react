@@ -86,7 +86,7 @@ export default function PostHeader(props: PostHeaderProps) {
             <Typography variant="h5" color="inherit">
               {post.linkText == "" ? "" : "Link"}
             </Typography>
-            <Link color="inherit" href={post.linkUrl}>
+            <Link color="inherit" href={post.linkUrl} target={"_blank"}>
               {post.linkText}
             </Link>
           </Box>
