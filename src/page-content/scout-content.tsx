@@ -72,7 +72,13 @@ export const interviewsTextImageSection: TextImageSectionProps = {
     caption:
       "Persona created from an interview with a venture in the Set Stage",
     header: "Interviews",
-    body: "Our goals were to learn about how the venture journey works, discover ventures’ perspective on IDEA, understand what information gaps currently exist, learn how to design to resolve pain points, visualize and communicate the venture journey, and highlight the relationship between Scout & IDEA. Throughout the interviews, we sought to A) understand how they view the venture process and conceptualize the structure of IDEA, B) gain a better understanding of how they communicate with other ventures, IDEA coaches, and IDEA mentors and C) identify their biggest points of frustration and confusion.",
+    subheaders: ["", "", ""],
+    bodies: [
+      "Our goals were to learn about how the venture journey works, discover ventures’ perspective on IDEA, understand what information gaps currently exist, learn how to design to resolve pain points, visualize and communicate the venture journey, and highlight the relationship between Scout & IDEA. Throughout the interviews, we sought to ",
+      "A) Understand how they view the venture process and conceptualize the structure of IDEA",
+      "B) Gain a better understanding of how they communicate with other ventures, IDEA coaches, and IDEA mentors",
+      "C) Identify their biggest points of frustration and confusion",
+    ],
   },
 };
 

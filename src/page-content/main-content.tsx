@@ -53,22 +53,22 @@ export const scoutCard: MyCardProps = {
   linkPath: "/scout",
 };
 
-export const freeCard: MyCardProps = {
-  imgPath: freeCover,
-  imgAlt: "Freelance Work Card",
-  title: "Freelance Work",
-  titleColor: COLORS.LIGHT,
-  linkAlt: "a link",
-  linkPath: "/freelancework",
-};
-export const idCard: MyCardProps = {
-  imgPath: idCover,
-  imgAlt: "Info Design Card",
-  title: "Information Design & Visualization",
-  titleColor: COLORS.LIGHT,
-  linkAlt: "a link",
-  linkPath: "/informationdesign",
-};
+// export const freeCard: MyCardProps = {
+//   imgPath: freeCover,
+//   imgAlt: "Freelance Work Card",
+//   title: "Freelance Work",
+//   titleColor: COLORS.LIGHT,
+//   linkAlt: "a link",
+//   linkPath: "/freelancework",
+// };
+// export const idCard: MyCardProps = {
+//   imgPath: idCover,
+//   imgAlt: "Info Design Card",
+//   title: "Information Design & Visualization",
+//   titleColor: COLORS.LIGHT,
+//   linkAlt: "a link",
+//   linkPath: "/informationdesign",
+// };
 
 export const mainProps: MainProps = {
   mainProps: {
@@ -92,6 +92,7 @@ export const mainProps: MainProps = {
         faIcon: FA_ICONS.EMAIL,
       },
     ],
-    cards: [morseCard, emuCard, typeCard, gdCard, scoutCard, freeCard, idCard],
+    // cards: [morseCard, emuCard, typeCard, gdCard, scoutCard, freeCard, idCard],
+    cards: [morseCard, emuCard, typeCard, gdCard, scoutCard],
   },
 };

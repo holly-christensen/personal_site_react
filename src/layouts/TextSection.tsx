@@ -35,9 +35,11 @@ export default function TextSection(props: TextSectionProps) {
           {post.bodies.map((bodyText, index) => {
             return (
               <li key={index} className={"text-section_body"}>
-                <Typography variant="h6" className={"text-section_subheader"}>
-                  {post.subheaders[index]}
-                </Typography>
+                {post.subheaders[index] !== "" && (
+                  <Typography variant="h6" className={"text-section_subheader"}>
+                    {post.subheaders[index]}
+                  </Typography>
+                )}
                 <Typography color="inherit" paragraph>
                   {bodyText}
                 </Typography>

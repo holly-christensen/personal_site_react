@@ -10,7 +10,8 @@ export interface TextImageSectionProps {
     imgSize: string;
     caption: string;
     header: string;
-    body: string;
+    subheaders: string[];
+    bodies: string[];
   };
 }
 
@@ -37,9 +38,20 @@ export default function TextImageSection(props: TextImageSectionProps) {
           <Typography variant="h4" color="inherit">
             {post.header}
           </Typography>
-          <Typography color="inherit" paragraph>
-            {post.body}
-          </Typography>
+          {post.bodies.map((bodyText, index) => {
+            return (
+              <li key={index} className={"text-section_body"}>
+                {post.subheaders[index] !== "" && (
+                  <Typography variant="h6" className={"text-section_subheader"}>
+                    {post.subheaders[index]}
+                  </Typography>
+                )}
+                <Typography color="inherit" paragraph>
+                  {bodyText}
+                </Typography>
+              </li>
+            );
+          })}
         </Box>
       </Grid>
 

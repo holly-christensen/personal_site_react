@@ -12,6 +12,9 @@ export const aboutTextImageSection: TextImageSectionProps = {
     imgSize: SIZES.SMALL,
     caption: "",
     header: "Hi, I'm Holly",
-    body: " Who I am... Integer maximus at nibh et cursus. Nullam maximus justo velit, eget elementum tortor elementum et. Sed id lobortis velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas congue magna eget ex suscipit, eget dapibus nisi cursus. Fusce risus orci, rhoncus quis ullamcorper quis, consectetur eget lectus. Phasellus varius tincidunt orci id hendrerit. Nunc vulputate dui vel ex cursus, pharetra rhoncus enim pellentesque.",
+    subheaders: ["What i'm up to", "what i like"],
+    bodies: [
+      "I'm currently completing my final year studying Computer Science & Design at Northeastern University.",
+    ],
   },
 };

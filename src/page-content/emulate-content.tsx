@@ -3,8 +3,6 @@ import { PostHeaderProps } from "../PostHeader";
 import { TextSectionProps } from "../layouts/TextSection";
 import { ImageGalleryProps } from "../layouts/ImageGallery";
 import { ImageFullProps } from "../layouts/ImageFull";
-import { TextImageSectionProps } from "../layouts/TextImageSection";
-import { SIZES } from "../consts";
 
 // image imports
 import emulate_header from "../img/headers/emu-header.png";

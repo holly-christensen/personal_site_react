@@ -36,8 +36,7 @@ export const typeHeaderProps: PostHeaderProps = {
     tools: "Illustrator, Indesign",
     linkText: "",
     linkUrl: "#",
-    about:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris mi, tristique quis odio vel, molestie iaculis enim. Aliquam ultrices turpis a lectus dignissim, id viverra dolor dapibus. Vestibulum eu quam commodo, luctus nunc sit amet, malesuada est. Nunc finibus laoreet magna vitae convallis. Nam accumsan libero ac libero aliquet, quis rhoncus odio iaculis. Nunc interdum odio ut diam vulputate, at faucibus nulla posuere. Sed neque massa, venenatis sit amet dapibus a, mattis sit amet felis.",
+    about: "This page shows a few of my projects from Typography I and II. ",
   },
 };
 
@@ -47,7 +46,7 @@ export const systemTextSection: TextSectionProps = {
     header: "System Project",
     subheaders: [""],
     bodies: [
-      "Design a brochure for the Northeastern University College of Arts, Media, and Design, showcasing ten different artistic tracks. Include a description, title, image, and page number. Focus on pacing and visual interest. Draw inspiration from Swedish and Dutch design.",
+      "I designed a brochure for the Northeastern University College of Arts, Media, and Design, showcasing ten different artistic tracks. Each page includes a description, title, image, and page number. I focused on pacing, visual interest, and cohesion.",
     ],
   },
 };
@@ -90,7 +89,10 @@ export const mahlerTextImageSection: TextImageSectionProps = {
     imgAlt: "Mahler Symphony Poster",
     caption: "Mahler Symphony Poster for Typography I",
     header: "Mahler Symphony Poster",
-    body: "Design a poster for the Mahler Symphony No.9 as a means of communicating a musical event. Address critical relationships between type, image, and message at a larger scale. Use the following concepts: grid, type hierarchy, image, and color.",
+    subheaders: [""],
+    bodies: [
+      "In Typography I, I designed a poster for the Mahler Symphony No.9. The poster focuses on the relationships between type, image, and message.",
+    ],
   },
 };
 
@@ -112,7 +114,11 @@ export const rubyTextImageSection: TextImageSectionProps = {
     imgAlt: "Sterling Ruby Exhibition Poster",
     caption: "Sterling Ruby Exhibition Poster for Typography I",
     header: "Sterling Ruby Exhibition Poster",
-    body: "In vel augue ornare, varius ligula et, posuere quam. Curabitur augue lacus, sagittis ac nisi ac, tincidunt feugiat sapien. Vestibulum a sem et turpis porttitor auctor. Phasellus a mauris vulputate, placerat lorem id, eleifend est. Fusce diam nibh, consectetur vitae sollicitudin a, scelerisque volutpat augue. Duis non pharetra diam, in vehicula ipsum.",
+    subheaders: [" ", " "],
+    bodies: [
+      "In Typography II, I designed a potential exhibition poster for Sterling Ruby's exhibition at ICA / Boston. The exhibition critiques the structures of modernism and traditional institutions in the United States. It addresses the repressed underpinnings of U.S. culture and the coding of power and violence.",
+      "My work was inspired by the following visual qualities of Sterling Ruby's artwork: polyurethane, layered paint, textured fabrics, etched lettering, collage, sculpture, ceramics, welding, quilting, and photography.",
+    ],
   },
 };
 
