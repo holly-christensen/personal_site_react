@@ -14,6 +14,7 @@ import EmulatePage from "./pages/emulate-page";
 import MorsePage from "./pages/morse-page";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
+import FreelancePage from "./pages/freelance-page";
 
 const theme = createTheme({
   typography: {
@@ -70,7 +71,7 @@ ReactDOM.render(
         <Route path="/scout" element={<ScoutPage />} />
         <Route path="/emulatecoop" element={<EmulatePage />} />
         <Route path="/morsecoop" element={<MorsePage />} />
-        {/* <Route path="/freelancework" element={<FreelancePage />} /> */}
+        <Route path="/freelancework" element={<FreelancePage />} />
       </Routes>
       {/* FOOTER */}
       <Footer />
