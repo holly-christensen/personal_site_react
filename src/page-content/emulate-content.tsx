@@ -42,8 +42,10 @@ export const emulateHeaderProps: PostHeaderProps = {
     tools: "Sketch, Jira",
     linkText: "Emulate's Website",
     linkUrl: "https://emulatebio.com/",
-    about:
-      "During Spring 2020, I worked as an Interaction Design Co-op at Emulate, Inc. Working in small teams, I designed a proposed UI design system for a new cell-culture lab instrument UI, including UI components, layout standards, detailed mockups, and user flow diagrams. To guide the design process and form requirements, I conducted small-scale UX research through observation, contextual inquiry, and surveys, as well as small-scale user testing with a semi-functional UI prototype.\nIn addition to my work on the lab instrument UI, I designed new features and regular usability fixes and for Emulate’s experiment management software by applying user feedback and implementing project goals.",
+    about: [
+      "During Spring 2020, I worked as an Interaction Design Co-op at Emulate, Inc. Working in small teams, I designed a proposed UI design system for a new cell-culture lab instrument UI, including UI components, layout standards, detailed mockups, and user flow diagrams. To guide the design process and form requirements, I conducted small-scale UX research through observation, contextual inquiry, and surveys, as well as small-scale user testing with a semi-functional UI prototype.",
+      "In addition to my work on the lab instrument UI, I designed new features and regular usability fixes and for Emulate’s experiment management software by applying user feedback and implementing project goals.",
+    ],
   },
 };
 

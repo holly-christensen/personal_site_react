@@ -32,8 +32,9 @@ export const gdHeaderProps: PostHeaderProps = {
     tools: "Illustrator, Indesign",
     linkText: "",
     linkUrl: "#",
-    about:
+    about: [
       "This page shows a combination of personal projects and few of the graphic design projects that I have worked on in my courses over the past 2-3 years.",
+    ],
   },
 };
 

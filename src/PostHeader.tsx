@@ -15,7 +15,7 @@ export interface PostHeaderProps {
     tools: string;
     linkText: string;
     linkUrl: string;
-    about: string;
+    about: string[];
   };
 }
 
@@ -103,9 +103,15 @@ export default function PostHeader(props: PostHeaderProps) {
             <Typography variant="h4" color="inherit">
               About
             </Typography>
-            <Typography color="inherit" paragraph>
-              {post.about}
-            </Typography>
+            {post.about.map((paragraphText, index) => {
+              return (
+                <li key={index} className={"text-section_body"}>
+                  <Typography color="inherit" paragraph>
+                    {paragraphText}
+                  </Typography>
+                </li>
+              );
+            })}
           </Box>
         </Grid>
       </Grid>

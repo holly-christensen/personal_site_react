@@ -36,7 +36,7 @@ export const typeHeaderProps: PostHeaderProps = {
     tools: "Illustrator, Indesign",
     linkText: "",
     linkUrl: "#",
-    about: "This page shows a few of my projects from Typography I and II. ",
+    about: ["This page shows a few of my projects from Typography I and II."],
   },
 };
 

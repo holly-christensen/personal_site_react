@@ -34,7 +34,7 @@ export const scoutHeaderProps: PostHeaderProps = {
     tools: "Illustrator, Indesign, Trello",
     linkText: "",
     linkUrl: "#",
-    about: "",
+    about: [""],
   },
 };
 
