@@ -13,9 +13,9 @@ export default function NavBar() {
           <Link to={"/"} className={"nav-bar_item"}>
             Portfolio
           </Link>
-          <Link to={"/about"} className={"nav-bar_item"}>
+          {/* <Link to={"/about"} className={"nav-bar_item"}>
             About
-          </Link>
+          </Link> */}
           <Link to={"/resume"} className={"nav-bar_item"}>
             Resume
           </Link>

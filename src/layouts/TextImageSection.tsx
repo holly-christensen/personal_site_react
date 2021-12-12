@@ -35,18 +35,21 @@ export default function TextImageSection(props: TextImageSectionProps) {
             pr: { md: 5 },
           }}
         >
-          <Typography variant="h4" color="inherit">
+          <Typography variant={"h4"} color={"inherit"}>
             {post.header}
           </Typography>
           {post.bodies.map((bodyText, index) => {
             return (
               <li key={index} className={"text-section_body"}>
                 {post.subheaders[index] !== "" && (
-                  <Typography variant="h6" className={"text-section_subheader"}>
+                  <Typography
+                    variant={"h6"}
+                    className={"text-section_subheader"}
+                  >
                     {post.subheaders[index]}
                   </Typography>
                 )}
-                <Typography color="inherit" paragraph>
+                <Typography color={"inherit"} paragraph>
                   {bodyText}
                 </Typography>
               </li>
@@ -65,8 +68,8 @@ export default function TextImageSection(props: TextImageSectionProps) {
             mt: { xs: 0, md: 4 },
           }}
         >
-          <img src={post.imgPath} alt={post.imgAlt} width="100%" />
-          <Typography color="inherit" paragraph className={"caption"}>
+          <img src={post.imgPath} alt={post.imgAlt} width={"100%"} />
+          <Typography color={"inherit"} paragraph className={"caption"}>
             {post.caption}
           </Typography>
         </Box>

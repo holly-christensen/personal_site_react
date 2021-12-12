@@ -15,6 +15,7 @@ import MorsePage from "./pages/morse-page";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
 import FreelancePage from "./pages/freelance-page";
+import ResumePage from "./pages/resume-page";
 
 const theme = createTheme({
   typography: {
@@ -65,7 +66,7 @@ ReactDOM.render(
       <Routes>
         <Route path="/" element={<Main {...mainProps} />} />
         <Route path="/about" element={<AboutPage />} />
-        {/* <Route path="/resume" element={<ResumePage />} /> */}
+        <Route path="/resume" element={<ResumePage />} />
         <Route path="/typography" element={<TypographyPage />} />
         <Route path="/graphicdesign" element={<GraphicDesignPage />} />
         <Route path="/scout" element={<ScoutPage />} />
