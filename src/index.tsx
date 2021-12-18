@@ -15,7 +15,7 @@ import MorsePage from "./pages/morse-page";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
 import FreelancePage from "./pages/freelance-page";
-import ResumePage from "./pages/resume-page";
+import { Link } from "@mui/material";
 
 const theme = createTheme({
   typography: {
@@ -60,13 +60,10 @@ ReactDOM.render(
   <ThemeProvider theme={theme}>
     <CssBaseline />
     <Router>
-      {/* NAV BAR */}
-      <NavBar />
       {/* LINKS */}
       <Routes>
         <Route path="/" element={<Main {...mainProps} />} />
         <Route path="/about" element={<AboutPage />} />
-        <Route path="/resume" element={<ResumePage />} />
         <Route path="/typography" element={<TypographyPage />} />
         <Route path="/graphicdesign" element={<GraphicDesignPage />} />
         <Route path="/scout" element={<ScoutPage />} />
@@ -75,7 +72,7 @@ ReactDOM.render(
         <Route path="/freelancework" element={<FreelancePage />} />
       </Routes>
       {/* FOOTER */}
-      <Footer />
+      {/* <Footer /> */}
     </Router>
   </ThemeProvider>,
   document.getElementById("root")

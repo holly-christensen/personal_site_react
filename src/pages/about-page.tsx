@@ -1,11 +1,17 @@
 import "../styles.css";
 import { aboutTextImageSection } from "../page-content/about-content";
 import TextImageSection from "../layouts/TextImageSection";
+import React from "react";
+import NavBar from "../NavBar";
+import { navLightProps } from "../page-content/nav-content";
 
 export default function AboutPage() {
   return (
-    <div className={"background_dark"}>
-      <TextImageSection post={aboutTextImageSection.post} />
-    </div>
+    <React.Fragment>
+      <NavBar color={navLightProps.color} />
+      <div className={"background_dark"}>
+        <TextImageSection post={aboutTextImageSection.post} />
+      </div>
+    </React.Fragment>
   );
 }

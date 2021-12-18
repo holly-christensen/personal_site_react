@@ -14,21 +14,27 @@ import {
 
 import { memorialTextSection } from "../page-content/graphic-design-content";
 import ImageFull from "../layouts/ImageFull";
+import React from "react";
+import NavBar from "../NavBar";
+import { navLightProps } from "../page-content/nav-content";
 
 export default function GraphicDesignPage() {
   return (
-    <div className={"background_light"}>
-      {/* page header */}
-      <PostHeader post={gdHeaderProps.post} />
-      {/* memorial system */}
-      <TextSection post={memorialTextSection.post} />
-      <ImageGallery post={memorialGallery.post} />
-      <TextSection post={stampTextSection.post} />
-      <ImageGallery post={stampGallery.post} />
-      {/* lilo */}
-      <TextSection post={liloTextSection.post} />
-      <ImageFull post={liloDarkFull.post} />
-      <ImageFull post={liloLightFull.post} />
-    </div>
+    <React.Fragment>
+      <NavBar color={navLightProps.color} />
+      <div className={"background_light"}>
+        {/* page header */}
+        <PostHeader post={gdHeaderProps.post} />
+        {/* memorial system */}
+        <TextSection post={memorialTextSection.post} />
+        <ImageGallery post={memorialGallery.post} />
+        <TextSection post={stampTextSection.post} />
+        <ImageGallery post={stampGallery.post} />
+        {/* lilo */}
+        <TextSection post={liloTextSection.post} />
+        <ImageFull post={liloDarkFull.post} />
+        <ImageFull post={liloLightFull.post} />
+      </div>
+    </React.Fragment>
   );
 }

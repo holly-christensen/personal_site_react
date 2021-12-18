@@ -9,6 +9,8 @@ import MyCard, { MyCardProps } from "./MyCard";
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconDefinition } from "@fortawesome/free-solid-svg-icons";
+import NavBar from "./NavBar";
+import { navDarkProps } from "./page-content/nav-content";
 
 export interface MainProps {
   mainProps: {
@@ -30,6 +32,8 @@ export default function Main(props: MainProps) {
   return (
     <React.Fragment>
       <CssBaseline />
+      {/* NAV BAR */}
+      <NavBar color={navDarkProps.color} />
       <main className={"background_dark"}>
         {/* HERO UNIT*/}
         <Box className={"hero_box"}>

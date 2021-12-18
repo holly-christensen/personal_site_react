@@ -3,22 +3,40 @@ import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import React from "react";
 import { Link } from "react-router-dom";
+import { COLORS } from "./consts";
+import resumePdf from "./img/misc/hollychristensen_resume_2021.pdf";
 
-export default function NavBar() {
+export interface NavBarProps {
+  color: string;
+}
+
+export default function NavBar(props: NavBarProps) {
+  const { color } = props;
+
+  const backgroundColor =
+    color === COLORS.LIGHT ? "background_light" : "background_dark";
+
   return (
     <React.Fragment>
       <CssBaseline />
-      <AppBar position="relative" className={"background_dark"}>
+      <AppBar
+        position="relative"
+        elevation={0}
+        className={`${backgroundColor}`}
+      >
         <Toolbar className={"nav-bar"}>
-          <Link to={"/"} className={"nav-bar_item"}>
+          <Link to={"/"} className={`nav-bar_item`}>
             Portfolio
           </Link>
-          {/* <Link to={"/about"} className={"nav-bar_item"}>
+          {/* <Link to={"/about"} className={`nav-bar_item ${textColor}`}>
             About
           </Link> */}
-          <Link to={"/resume"} className={"nav-bar_item"}>
+          <a href={resumePdf} target={"_blank"} className={`nav-bar_item`}>
             Resume
-          </Link>
+          </a>
+          {/* <Link to={"/resume"} className={`nav-bar_item`}>
+            Resume
+          </Link> */}
         </Toolbar>
       </AppBar>
     </React.Fragment>
