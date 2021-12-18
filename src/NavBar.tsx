@@ -4,7 +4,7 @@ import Toolbar from "@mui/material/Toolbar";
 import React from "react";
 import { Link } from "react-router-dom";
 import { COLORS } from "./consts";
-import resumePdf from "./img/misc/hollychristensen_resume_2021.pdf";
+import resumePdf from "./img/misc/hollylovejoy_resume_2021.pdf";
 
 export interface NavBarProps {
   color: string;
@@ -19,12 +19,8 @@ export default function NavBar(props: NavBarProps) {
   return (
     <React.Fragment>
       <CssBaseline />
-      <AppBar
-        position="relative"
-        elevation={0}
-        className={`${backgroundColor}`}
-      >
-        <Toolbar className={"nav-bar"}>
+      <AppBar position="relative" elevation={0}>
+        <Toolbar className={`nav-bar ${backgroundColor}`}>
           <Link to={"/"} className={`nav-bar_item`}>
             Portfolio
           </Link>
@@ -34,9 +30,6 @@ export default function NavBar(props: NavBarProps) {
           <a href={resumePdf} target={"_blank"} className={`nav-bar_item`}>
             Resume
           </a>
-          {/* <Link to={"/resume"} className={`nav-bar_item`}>
-            Resume
-          </Link> */}
         </Toolbar>
       </AppBar>
     </React.Fragment>
