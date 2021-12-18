@@ -17,6 +17,7 @@ import ImageFull from "../layouts/ImageFull";
 import React from "react";
 import NavBar from "../NavBar";
 import { navLightProps } from "../page-content/nav-content";
+import Footer from "../Footer";
 
 export default function GraphicDesignPage() {
   return (
@@ -35,6 +36,7 @@ export default function GraphicDesignPage() {
         <ImageFull post={liloDarkFull.post} />
         <ImageFull post={liloLightFull.post} />
       </div>
+      <Footer color={navLightProps.color} />
     </React.Fragment>
   );
 }

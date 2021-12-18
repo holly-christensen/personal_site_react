@@ -6,6 +6,7 @@ import { freelancePostHeader } from "../page-content/freelance-content";
 import React from "react";
 import NavBar from "../NavBar";
 import { navLightProps } from "../page-content/nav-content";
+import Footer from "../Footer";
 
 export default function FreelancePage() {
   return (
@@ -15,6 +16,7 @@ export default function FreelancePage() {
         {/* Page Header */}
         <PostHeader post={freelancePostHeader.post} />
       </div>
+      <Footer color={navLightProps.color} />
     </React.Fragment>
   );
 }

@@ -6,6 +6,7 @@ import { morseHeaderProps } from "../page-content/morse-content";
 import React from "react";
 import NavBar from "../NavBar";
 import { navLightProps } from "../page-content/nav-content";
+import Footer from "../Footer";
 
 export default function MorsePage() {
   return (
@@ -14,7 +15,8 @@ export default function MorsePage() {
       <div className={"background_light"}>
         {/* Page Header */}
         <PostHeader post={morseHeaderProps.post} />
-      </div>{" "}
+      </div>
+      <Footer color={navLightProps.color} />
     </React.Fragment>
   );
 }

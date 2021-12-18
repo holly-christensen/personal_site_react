@@ -21,6 +21,7 @@ import {
 import React from "react";
 import NavBar from "../NavBar";
 import { navDarkProps, navLightProps } from "../page-content/nav-content";
+import Footer from "../Footer";
 
 export default function ScoutPage() {
   return (
@@ -42,6 +43,7 @@ export default function ScoutPage() {
         <TextSection post={goStageTextSection.post} />
         <ImageGallery post={goGuideImageGallery.post} />
       </div>
+      <Footer color={navLightProps.color} />
     </React.Fragment>
   );
 }

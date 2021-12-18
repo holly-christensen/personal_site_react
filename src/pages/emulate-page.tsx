@@ -28,6 +28,7 @@ import {
 import NavBar from "../NavBar";
 import { navLightProps } from "../page-content/nav-content";
 import React from "react";
+import Footer from "../Footer";
 
 export default function EmulatePage() {
   return (
@@ -56,6 +57,7 @@ export default function EmulatePage() {
         <ImageFull post={groupsChips1ImageFull.post} />
         <ImageFull post={groupsChips2ImageFull.post} />
       </div>
+      <Footer color={navLightProps.color} />
     </React.Fragment>
   );
 }

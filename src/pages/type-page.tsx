@@ -15,6 +15,7 @@ import TextImageSection from "../layouts/TextImageSection";
 import React from "react";
 import NavBar from "../NavBar";
 import { navLightProps } from "../page-content/nav-content";
+import Footer from "../Footer";
 
 export default function TypographyPage() {
   return (
@@ -34,6 +35,7 @@ export default function TypographyPage() {
         {/* mahler */}
         <TextImageSection post={mahlerTextImageSection.post} />
       </div>
+      <Footer color={navLightProps.color} />
     </React.Fragment>
   );
 }

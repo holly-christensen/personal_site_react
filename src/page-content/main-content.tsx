@@ -74,7 +74,7 @@ export const mainProps: MainProps = {
   mainProps: {
     title: "holly lovejoy",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet odio vitae mauris aliquet, nec interdum velit porta. Mauris ac malesuada sapien. Proin at odio vitae mi consequat volutpat vitae nec magna. Praesent lacinia ipsum eros, sit amet pellentesque felis molestie id. Vestibulum feugiat, mi cursus elementum consectetur, dui diam fringilla lorem, eget condimentum sem ex ut ante.",
+      "I'm a 4th year combined Computer Science & Design student at Northeastern University. I'm interested in software development, UX design, UI Design, Interaction Design, Graphic Design, and Human-Computer Interaction.",
     buttons: [
       {
         text: "GitHub",

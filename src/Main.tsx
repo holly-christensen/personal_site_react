@@ -1,4 +1,3 @@
-import Button from "@mui/material/Button";
 import CssBaseline from "@mui/material/CssBaseline";
 import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
@@ -11,6 +10,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconDefinition } from "@fortawesome/free-solid-svg-icons";
 import NavBar from "./NavBar";
 import { navDarkProps } from "./page-content/nav-content";
+import Footer from "./Footer";
 
 export interface MainProps {
   mainProps: {
@@ -91,6 +91,7 @@ export default function Main(props: MainProps) {
           </Grid>
         </Container>
       </main>
+      <Footer color={navDarkProps.color} />
     </React.Fragment>
   );
 }

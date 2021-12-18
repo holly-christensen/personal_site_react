@@ -4,6 +4,7 @@ import TextImageSection from "../layouts/TextImageSection";
 import React from "react";
 import NavBar from "../NavBar";
 import { navLightProps } from "../page-content/nav-content";
+import Footer from "../Footer";
 
 export default function AboutPage() {
   return (
@@ -12,6 +13,7 @@ export default function AboutPage() {
       <div className={"background_dark"}>
         <TextImageSection post={aboutTextImageSection.post} />
       </div>
+      <Footer color={navLightProps.color} />
     </React.Fragment>
   );
 }
