@@ -60,7 +60,7 @@ export default function Main(props: MainProps) {
             >
               {buttons.map((button) => {
                 return (
-                  <a href={button.path} target="_blank">
+                  <a href={button.path} target="_blank" key={button.text}>
                     <FontAwesomeIcon
                       icon={button.faIcon}
                       size="2x"
