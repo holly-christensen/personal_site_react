@@ -4,7 +4,7 @@ import Toolbar from "@mui/material/Toolbar";
 import React from "react";
 import { Link } from "react-router-dom";
 import { COLORS } from "./consts";
-import resumePdf from "./img/misc/hollylovejoy_resume_2021.pdf";
+import resumePdf from "./img/misc/lovejoy-resume-2021.pdf";
 
 export interface NavBarProps {
   color: string;
