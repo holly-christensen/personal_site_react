@@ -24,9 +24,9 @@ export default function NavBar(props: NavBarProps) {
           <Link to={"/"} className={`nav-bar_item`}>
             Portfolio
           </Link>
-          {/* <Link to={"/about"} className={`nav-bar_item ${textColor}`}>
+          {/*<Link to={"/about"} className={`nav-bar_item ${backgroundColor}`}>
             About
-          </Link> */}
+          </Link>*/}
           <a href={resumePdf} target={"_blank"} className={`nav-bar_item`}>
             Resume
           </a>

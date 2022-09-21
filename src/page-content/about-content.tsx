@@ -12,9 +12,9 @@ export const aboutTextImageSection: TextImageSectionProps = {
     imgSize: SIZES.SMALL,
     caption: "",
     header: "Hi, I'm Holly",
-    subheaders: ["What i'm up to", "what i like"],
+    subheaders: ["What i'm up to"],
     bodies: [
-      "I'm currently completing my final year studying Computer Science & Design at Northeastern University.",
+      "I recently graduated from Northeastern University with a Bachelors of Science in Computer Science & Graphic Design. I'm currently available for Frontend Web Development, Software Engineering, and UI, UX, and Human Computer Interaction Engineer roles.",
     ],
   },
 };
