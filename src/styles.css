@@ -1,3 +1,6 @@
+@import url("https://use.typekit.net/dvr7shz.css");
+
+
 :root {
     --main-dark: #1a202c;
     --main-gray: #657dae;
@@ -84,6 +87,12 @@
     padding-top: 8%;
     padding-bottom: 6%;
     text-align: left;
+}
+
+.hero_title {
+  font-family: monotalic, sans-serif !important;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .text-image-section_container {
