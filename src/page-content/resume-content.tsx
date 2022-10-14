@@ -1,5 +1,5 @@
 import { ImageFullProps } from "../layouts/ImageFull";
-import resume from "../img/misc/lovejoy-resume-09-2022.pdf";
+import resume from "../img/misc/lovejoy-resume-10-2022.pdf";
 
 export const resumeImageFull: ImageFullProps = {
   post: {
